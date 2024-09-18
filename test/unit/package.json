@@ -1,6 +1,5 @@
 {
   "name": "unit-tests",
-  "private": "true",
   "description": "Jest unit tests for Shepherd",
   "repository": {
     "type": "git",

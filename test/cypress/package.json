@@ -1,6 +1,5 @@
 {
   "name": "cypress-tests",
-  "private": "true",
   "description": "Cypress tests for Shepherd",
   "repository": {
     "type": "git",

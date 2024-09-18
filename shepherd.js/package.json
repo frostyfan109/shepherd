@@ -1,5 +1,5 @@
 {
-  "name": "shepherd.js",
+  "name": "@groupe/shepherd.js",
   "version": "13.0.3",
   "description": "Guide your users through a tour of your app.",
   "keywords": [
@@ -11,7 +11,7 @@
   "homepage": "https://shepherdjs.dev",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shepherd-pro/shepherd.git"
+    "url": "git+https://github.com/frostyfan109/shepherd.git"
   },
   "license": "AGPL-3.0",
   "authors": [

@@ -28,6 +28,7 @@ export function setupTooltip(step: Step): ComputePositionConfig {
 
   let target = attachToOptions.element as HTMLElement;
   const floatingUIOptions = getFloatingUIOptions(attachToOptions, step);
+  const autoUpdateOptions = step.options.floatingUIAutoUpdateOptions || {}
   const shouldCenter = shouldCenterStep(attachToOptions);
 
   if (shouldCenter) {
@@ -45,7 +46,7 @@ export function setupTooltip(step: Step): ComputePositionConfig {
     }
 
     setPosition(target, step, floatingUIOptions, shouldCenter);
-  });
+  }, autoUpdateOptions);
 
   step.target = attachToOptions.element as HTMLElement;
 
@@ -68,6 +69,10 @@ export function mergeTooltipConfig(
     floatingUIOptions: deepmerge(
       tourOptions.floatingUIOptions || {},
       options.floatingUIOptions || {}
+    ),
+    floatingUIAutoUpdateOptions: deepmerge(
+      tourOptions.floatingUIAutoUpdateOptions || {},
+      options.floatingUIAutoUpdateOptions || {}
     )
   };
 }

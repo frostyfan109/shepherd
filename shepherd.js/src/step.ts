@@ -1,4 +1,4 @@
-import { deepmerge } from 'deepmerge-ts';
+  import { deepmerge } from 'deepmerge-ts';
 import { Evented } from './evented.ts';
 import autoBind from './utils/auto-bind.ts';
 import {
@@ -132,9 +132,14 @@ export interface StepOptions {
   modalOverlayOpeningYOffset?: number;
 
   /**
-   * Extra [options to pass to FloatingUI]{@link https://floating-ui.com/docs/tutorial/}
+   * Extra [options to pass to FloatingUI computePosition]{@link https://floating-ui.com/docs/computeposition#options}
    */
   floatingUIOptions?: object;
+
+  /**
+   * Extra [options to pass to FloatingUI autoUpdate]{@link https://floating-ui.com/docs/autoupdate#options}
+   */
+  floatingUIAutoUpdateOptions?: object;
 
   /**
    * Should the element be scrolled to when this step is shown?

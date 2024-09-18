@@ -34,7 +34,6 @@
     },
     "./dist/css/shepherd.css": "./dist/css/shepherd.css"
   },
-  "type": "module",
   "scripts": {
     "build": "pnpm clean && rollup -c",
     "clean": "rimraf ./dist ./tmp",
